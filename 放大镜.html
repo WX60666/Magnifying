@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+    <img src="b2.jpg" alt="">
+    <span class="hander"></span>
+    <div class="mark"></div>
+</div>
+<div class="big-wrap">
+    <img class="big-img" src="b1.jpg" alt="">
+</div>
+<script src="Magnifying.js"></script>
+<script type="text/javascript">
+
+    window.onload= function(){
+        var m = new Magnifying();
+        var settings = {
+            // 可选参数,如果不传,则按照默认
+            w:250,//小图宽度
+            h:250,//小图高度
+            bw:650,//大图宽度
+            bh:650,//大图高度
+            // 必填参数
+            wrap:'wrap',
+            hander:'hander',
+            bigWrap:'big-wrap',
+            bigImg:'big-img',
+            mark:'mark'
+        };
+        m.init(settings);
+    }
+</script>
+</body>
+</html>
