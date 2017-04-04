@@ -4,6 +4,10 @@
  <img src="3.png" alt="">
 ## 使用:
 使用起来非常简单,可以根据自己的实际需要进行定制.使用方法如下:
+### CSS
+````
+<link rel="stylesheet" href="style.css">
+````
 ### html:
 小图 (待放大的图)
 ````
@@ -21,6 +25,7 @@
 ````
 ### JS
 ````
+    <script src="Magnifying.js"></script>
     window.onload= function(){
         var m = new Magnifying();
         var settings = {
